@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import logo from '../assets/img/logo_red.png'
+// import logo from '../assets/img/logo_red.png'
 import tele from '../assets/img/tele.png'
 import viber from '../assets/img/viber.png'
 import fb from '../assets/img/fb.png'
@@ -95,9 +95,9 @@ const ContactPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
             {content?.nav?.contact || 'Contact Us'}
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Get in touch with our support team. We're here to help you 24/7 with any questions or concerns.
-          </p>
+          {/*<p className="text-gray-300 text-lg max-w-2xl mx-auto">*/}
+          {/*  Get in touch with our support team. We're here to help you 24/7 with any questions or concerns.*/}
+          {/*</p>*/}
         </div>
 
         {/* Company Info Card */}
@@ -105,7 +105,7 @@ const ContactPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
               <img 
-                src={logo} 
+                src={"/images/billion_bet_logo.png"}
                 alt="Company Logo" 
                 className="w-32 h-32 md:w-40 md:h-40 object-contain filter drop-shadow-lg"
               />

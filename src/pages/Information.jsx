@@ -90,56 +90,56 @@ const InformationPage = () => {
               Account Information
             </h1>
           </div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Manage your profile, transfer funds, and view your transaction history
-          </p>
+          {/*<p className="text-gray-300 text-lg max-w-2xl mx-auto">*/}
+          {/*  Manage your profile, transfer funds, and view your transaction history*/}
+          {/*</p>*/}
         </div>
 
         {/* Tab Navigation */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          {tabs.map((tabItem) => (
-            <div
-              key={tabItem.id}
-              className="group relative cursor-pointer"
-              onClick={() => handleTabChange(tabItem.id)}
-            >
-              <div className={`bg-gradient-to-br from-[#181A29] to-[#1f2338] rounded-2xl p-6 shadow-lg border transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${
-                activeTab === tabItem.id
-                  ? `border-yellow-400/50 shadow-yellow-400/20`
-                  : `border-gray-700/50 hover:border-yellow-400/30`
-              }`}>
-                {/* Background Glow Effect */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${tabItem.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-                
-                {/* Content */}
-                <div className="relative z-10 text-center">
-                  <div className={`w-16 h-16 mx-auto mb-4 ${tabItem.bgColor} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <div className={tabItem.iconColor}>
-                      {tabItem.icon}
-                    </div>
-                  </div>
-                  
-                  <h3 className={`text-lg font-bold mb-2 transition-colors duration-300 ${
-                    activeTab === tabItem.id ? 'text-yellow-400' : 'text-white group-hover:text-yellow-400'
-                  }`}>
-                    {tabItem.title}
-                  </h3>
-                  
-                  <p className="text-gray-400 text-sm">
-                    {tabItem.description}
-                  </p>
+        {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">*/}
+        {/*  {tabs.map((tabItem) => (*/}
+        {/*    <div*/}
+        {/*      key={tabItem.id}*/}
+        {/*      className="group relative cursor-pointer"*/}
+        {/*      onClick={() => handleTabChange(tabItem.id)}*/}
+        {/*    >*/}
+        {/*      <div className={`bg-gradient-to-br from-[#181A29] to-[#1f2338] rounded-2xl p-6 shadow-lg border transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${*/}
+        {/*        activeTab === tabItem.id*/}
+        {/*          ? `border-yellow-400/50 shadow-yellow-400/20`*/}
+        {/*          : `border-gray-700/50 hover:border-yellow-400/30`*/}
+        {/*      }`}>*/}
+        {/*        /!* Background Glow Effect *!/*/}
+        {/*        <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${tabItem.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>*/}
+        {/*        */}
+        {/*        /!* Content *!/*/}
+        {/*        <div className="relative z-10 text-center">*/}
+        {/*          <div className={`w-16 h-16 mx-auto mb-4 ${tabItem.bgColor} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>*/}
+        {/*            <div className={tabItem.iconColor}>*/}
+        {/*              {tabItem.icon}*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          */}
+        {/*          <h3 className={`text-lg font-bold mb-2 transition-colors duration-300 ${*/}
+        {/*            activeTab === tabItem.id ? 'text-yellow-400' : 'text-white group-hover:text-yellow-400'*/}
+        {/*          }`}>*/}
+        {/*            {tabItem.title}*/}
+        {/*          </h3>*/}
+        {/*          */}
+        {/*          <p className="text-gray-400 text-sm">*/}
+        {/*            {tabItem.description}*/}
+        {/*          </p>*/}
                   
                   {/* Active Indicator */}
-                  {activeTab === tabItem.id && (
-                    <div className="mt-4">
-                      <div className={`w-8 h-1 bg-gradient-to-r ${tabItem.color} mx-auto rounded-full`}></div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+                  {/*{activeTab === tabItem.id && (*/}
+                  {/*  <div className="mt-4">*/}
+                  {/*    <div className={`w-8 h-1 bg-gradient-to-r ${tabItem.color} mx-auto rounded-full`}></div>*/}
+                  {/*  </div>*/}
+                  {/*)}*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
 
         {/* Active Tab Content */}
         <div className="relative">
